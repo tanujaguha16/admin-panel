@@ -1,0 +1,15 @@
+
+<div class="example-container">
+    <mat-form-field>
+        <input matInput placeholder="Category name" [(ngModel)]="category_name" >
+    </mat-form-field>
+    <mat-radio-group [(ngModel)]="status">
+        <mat-radio-button value="1">Enable</mat-radio-button>
+        <mat-radio-button value="0">Disable</mat-radio-button>
+    </mat-radio-group>
+    <button mat-flat-button color="primary" (click)="add_category($event)">Submit</button>
+</div>
+<mat-list>
+        <mat-list-item *ngFor = "let category of categories"> {{category.category}} </mat-list-item>
+</mat-list>
+<app-categorylist></app-categorylist>

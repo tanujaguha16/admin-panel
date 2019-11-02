@@ -1,0 +1,19 @@
+<div class="example-container">
+    <form [formGroup]="regiForm" (ngSubmit)="add_product(regiForm.value)">  
+    <mat-form-field>
+        <input matInput placeholder="Product name" formControlName="product">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Product price" formControlName="price">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Product quantity" formControlName="quantity">
+    </mat-form-field>
+    <mat-form-field>
+    <mat-select placeholder="Product category" formControlName="prod_category">
+        <mat-option value="option" *ngFor="let category of categorylist">{{category.category}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+    <button mat-flat-button color="primary" >Submit</button>
+</form> 
+</div>

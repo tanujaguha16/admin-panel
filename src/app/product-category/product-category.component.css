@@ -1,0 +1,17 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    padding: 52px;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .mat-flat-button{
+      width  :20% !important;
+      margin-left: 40%;
+       margin-top: 4%;
+  }
+  table{
+    width:100%;
+  }

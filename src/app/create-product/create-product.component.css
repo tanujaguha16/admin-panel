@@ -1,0 +1,12 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .mat-flat-button{
+    width : 20% !important;
+  }
